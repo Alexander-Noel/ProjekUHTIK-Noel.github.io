@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Siswa TIK</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #eef2f9;
+
+      background: linear-gradient(
+        180deg,
+        #f6f6f7,
+        #a7aeee,
+        #f7cd72,
+        #f1e2b7
+      );
+
+      background-size: 100% 300%;
+      background-position: 0% 0%;
+      transition: background-position 0.15s linear;
+
+      color: #333;
+    }
+
+
+   
+    .site-header {
+      background: linear-gradient(135deg, #0d2459, #26418b, #ccae5d);
+      text-align: center;
+      padding: 3rem 1rem;
+      color: white;
+    }
+    .site-header h1 { font-size: 2rem; font-weight: 700; }
+    .site-header p  { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin-top: 0.3rem; }
+
+
+   
+    .container { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+
+
+    .profil {
+      background: linear-gradient(160deg, #3b6fd4, #98aae2);
+      border-radius: 15px;
+      padding: 2rem;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      margin-bottom: 1rem;
+    }
+    .profil img  { width: 175px; height: 175px; border-radius: 50%; border: 3px solid rgba(248, 246, 246, 0.6); margin-bottom: 0.8rem; }
+    .profil h2   { font-size: 1.2rem; }
+    .profil .sub { font-size: 0.8rem; color: rgba(252, 247, 247, 0.75); margin: 0.2rem 0 1rem; }
+    .pill { background: rgba(255,255,255,0.2); border: 1px solid rgba(255, 254, 254, 0.3); border-radius: 99px; padding: 3px 12px; font-size: 0.72rem; display: inline-block; margin: 2px; }
+
+
+    .card { background: rgb(253, 253, 253); border: 1px solid #dde4f0; border-radius: 16px; padding: 1.5rem; margin-bottom: 1rem; }
+    .card h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: #3b6fd4; margin-bottom: 0.8rem; padding-bottom: 0.5rem; border-bottom: 1px solid #edf0f7; }
+    .card p  { font-size: 0.87rem; line-height: 1.8; color: #555; }
+
+
+    table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+    th { text-align: left; padding: 0 0.5rem 0.5rem; color: #000000; font-size: 0.72rem; text-transform: uppercase; }
+    td { padding: 0.55rem 0.5rem; border-top: 1px solid #f2f4f8; }
+    .biru  { font-weight: 600; color: #3b6fd4; text-align: right; }
+    .hijau { font-weight: 600; color: #2a7d4f; text-align: right; }
+
+    .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    .project {
+      background: #f7f9ff;
+      border: 1px solid #dde4f0;
+      border-radius: 12px;
+      padding: 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.15s;
+    }
+    .project:hover { transform: translateY(-2px); background: #eef2fd; }
+    .project .num   { font-size: 1.3rem; font-weight: 700; color: #e49a2b; }
+    .project .judul { font-size: 0.82rem; font-weight: 600; margin-top: 0.4rem; }
+    .project .link  { font-size: 0.72rem; color: #5a8dee; margin-top: 0.5rem; }
+
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .site-header h1 { font-size: 1.4rem; }
+      .project-grid   { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 380px) {
+      .project-grid { grid-template-columns: 1fr; }
+    }
+
+
+    .footer { text-align: center; font-size: 0.72rem; color: #000000; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+
+
+  <header class="site-header">
+    <h1>WEBSITE PROJEK TIK AKHIR KELAS XI-7</h1>
+    <p>Mata Pelajaran TIK</p>
+  </header>
+
+
+  <div class="container">
+
+
+    <div class="profil">
+      <img src="profilepicute.jpg" alt="Foto"/>
+      <h2>Alexander Noel Ariabima Danurjati</h2>
+      <p class="sub">Siswa Kolese Kanisius Jakarta</p>
+      <span class="pill">Kelas XI-7</span>
+      <span class="pill">Kolese Kanisius</span>
+      <span class="pill">Hobi: Main gitar dan Nongkrong</span>
+      <span class="pill">Cita - cita: Jadi Orang Kaya</span>
+    </div>
+
+
+    <div class="card">
+      <h3>Tentang Saya</h3>
+      <p>Saya Alexander Noel Aribima Danurjati merupakan seorang siswa yang berminat dalam Ekonomi, Manajemen, dan teknologi. Saya meminati ketiga subjek tersebut karena bagi saya ketiga subjek tersebut bisa bertahan lama di dunia yang modern nantinya. Selama semeseter ini pengalaman saya mempelajari TIK menarik karena saya jadi mengetahui banyak hal mengenai detail detail kecil dalam pembuatan website. Terakhir, tujuan saya mempelajari membuat website ini untuk memperkaya ilmu saya dalam bidang teknologi dan pemograman.</p>
+    </div>
+
+
+    <div class="card">
+      <h3>Nilai Ulangan Semester</h3>
+      <table>
+        <thead><tr><th>No</th><th>Materi</th><th>Nilai</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>CSS AND HTML</td><td class="hijau">100</td></tr>
+          <tr><td>2</td><td>Table List Form</td><td class="biru">98</td></tr>
+          <tr><td>3</td><td>Computional Thinking</td><td class="hijau">100</td></tr>
+          <tr><td>4</td><td>Javascript</td><td class="biru">95</td></tr>
+          <tr><td>5</td><td>Project Akhir Web Development</td><td class="biru">97</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <div class="card">
+      <h3>Project Semester Ini</h3>
+      <div class="project-grid">
+        <a href="projek 1.html" class="project">
+          <div class="num">01</div>
+          <div class="judul">WEB DEVELOPMENT FLEX-BOX </div>
+          <div class="link">Lihat →</div>
+        </a>
+        <a href="projek 2.html" class="project">
+          <div class="num">02</div>
+          <div class="judul">WEB BIODATA</div>
+          <div class="link">Lihat →</div>
+        </a>
+        <a href="projek 3.html" class="project">
+          <div class="num">03</div>
+          <div class="judul">MINI PROJECT WEB BRANDING</div>
+          <div class="link">Lihat →</div>
+        </a>
+      </div>
+    </div>
+
+
+    <p class="footer">© 2026 Projek Noel | Kolese Kanisius</p>
+
+
+  </div>
+
+
+  <script>
+    // Data siswa
+    const siswa = {
+      nama    : "Alexander Noel Aribima Danurjati",
+      kelas   : "XI-7",
+      sekolah : "Kolese Kanisius",
+      nilai   : [100, 98, 100, 95, 97]
+    };
+
+
+   
+    const total    = siswa.nilai.reduce((a, b) => a + b, 0);
+    const rataRata = (total / siswa.nilai.length).toFixed(1);
+
+
+   
+    console.log("=== Profil Siswa ===");
+    console.log("Nama    :", siswa.nama);
+    console.log("Kelas   :", siswa.kelas);
+    console.log("Sekolah :", siswa.sekolah);
+    console.log("Nilai   :", siswa.nilai);
+    console.log("Rata-rata:", rataRata);
+
+    
+    window.addEventListener("scroll", () => {
+
+      const scrollTop = window.scrollY;
+
+      const docHeight =
+        document.documentElement.scrollHeight -
+        window.innerHeight;
+
+      const scrollPercent =
+        (scrollTop / docHeight) * 100;
+
+      document.body.style.backgroundPosition =
+        `0% ${scrollPercent}%`;
+
+    });
+
+  </script>
+
+
+</body>
+</html>
